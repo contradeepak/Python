@@ -1,0 +1,89 @@
+Data Types
+
+
+1- In Python there are total 14 data types.
+
+Realworld
+Number -> int
+Text -> Strings
+image
+video -> Binary
+audio
+
+
+1- Integer
+2- Float
+3- Byte
+4- Bytearrray
+5- Boolean -> True or False
+6- None
+7- Complex
+8- Range
+
+Advanced data types:
+
+9- List
+10 - Tuple
+11- Set
+12- FrozenSet
+13- String
+14- Dictionary
+
+
+These are the 14 data types in Python.
+
+
+-> List will be created using [] brackets.
+-> Tuple will be created using {} braces.
+
+
+
+Mutable : Changeable
+Immutable : NotChangeable
+
+
+
+List, Set, Dictionary are mutable and all the other are immutable.
+
+
+I can fetch 
+
+
+Operators : Is a symbol that performs operatorions.
+
+Operands-
+
+a = 10
+
+b = 20   assigning values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
