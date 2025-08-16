@@ -58,10 +58,127 @@ a = 10
 b = 20   assigning values
 
 
++
+_
+/
+// -> Flow division 5
+%  -> 00
+*
+**
+
+
+AND
+
+
+OR
+
+Anyone is true all is true
+
+
+NOT
+
+not of true is false, not of false is true
+
+
+Comparison Operators
+
+a>b
+a<=b
+
+
+Assignment Operators
+
+What is the difference between is and equal to operator.
+
+Is is very important operator.
 
 
 
 
+Control flow statements/ Conditions
+
+a=10
+b=20
+
+if a>10:
+<---->print(a)
+else:
+print(b)
+
+
+
+if we use elif then remaining all the execution skips.
+
+
+
+Loops pe notes banana hai,
+
+
+
+Transfer statements 
+
+
+1- Pass
+2- Continue
+3- Break
+
+
+
+Advanced data types:
+
+1- List
+2- Tuple
+3- Set -> frozenset
+4- dictionary
+5-string
+
+
+List -
+
+1- Ordered collection of data, Homogeneous=Similar types(e.g. array) of data
+Heterogeneous= Combination, different types of data.
+
+
+2- Duplicates are allowed.
+
+3- List is created using [].
+
+4- Mutable data type.(We can perform addition, removal operation, modification operation)
+
+5- List is created using [] and using commas and is stored internally using 
+
+
+Note : If any value in the function is TRUE, then it will print TRUE. 
+If all values are false then it will print false.
+
+
+: String value is always equal to true if it is not empty.
+
+If the string is empty the check value is false.
+
+Any string has the value true.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
