@@ -160,6 +160,197 @@ Any string has the value true.
 
 
 
+✅ What is a palindrome?
+
+A palindrome is a word, number, or phrase that reads the same backward as forward.
+Examples:
+
+"madam" → palindrome
+
+"racecar" → palindrome
+
+"hello" → not palindrome
+
+121 → palindrome
+
+
+
+Great question! In Python, :: appears most often inside slicing.
+
+Let’s break it down step by step:
+
+Normal slicing
+my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(my_list[2:7])   # [2, 3, 4, 5, 6]
+
+
+Here the general syntax is:
+
+sequence[start : stop : step]
+
+What :: means
+
+: → means “everything” if you leave start/stop empty.
+
+:: → means “everything, with a step”.
+
+Example:
+
+print(my_list[::2])   # take every 2nd element → [0, 2, 4, 6, 8]
+print(my_list[::3])   # take every 3rd element → [0, 3, 6, 9]
+
+Common uses of ::
+
+Reverse a list/string
+
+print(my_list[::-1])   # [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+
+Skip elements
+
+print(my_list[::2])    # every second element
+print(my_list[1::2])   # every second element, starting at index 1
+
+
+Copy the whole sequence
+
+copy_list = my_list[:]     # same as my_list[::]
+
+
+✅ In short:
+
+: → slice
+
+:: → slice with step
+
+So :: is just shorthand to apply a step (stride) when slicing.
+
+
+
+Dictioanary : A dictionary is created using 
+
+Dictionary is mutable. It is unordered collection of data. 
+
+No index. Using key you fetch the value. 
+
+
+Strings, Strings in Python:
+
+Anything which is in Double quotes or triple quotes are single quotes. Everything that is in quotation is called strings is in history.
+Strings are immutable.
+
+It is a sequence of characters.
+
+In strings you can use \ escape character to represent special characters inside a string that can’t be typed directly.
+
+
+In one Python file there is only one Doc string. 
+
+
+Functions are reusable block of code that can perform any operation.
+
+
+How to create a function def calc(a,b)
+
+
+
+Types
+
+1. User Defined function
+
+input but no output
+ but no output
+
+2. Builtin function 
+3. Lambda Expressions
+4. Recursive fucntions
+
+
+Lamda Functions 
+
+It is a nameless function. 
+
+
+
+Parameters or Arguments?
+The terms parameter and argument can be used for the same thing: information that are passed into a function.
+
+From a function's perspective:
+
+A parameter is the variable listed inside the parentheses in the function definition.
+
+An argument is the value that is sent to the function when it is called.
+
+
+Arbitrary Arguments are often shortened to *args in Python documentations.
+
+
+
+---------------------------------------------------------------------------------
+
+
+Great question 👍
+
+In Python, indentation means the spaces (or tabs) you put at the beginning of a line to tell Python which block of code it belongs to.
+
+Unlike many other languages (like C, C++, Java) that use { } to mark blocks, Python uses indentation.
+
+Example without indentation (invalid in Python ❌)
+def hello():
+print("Hello World")
+
+
+This will give an IndentationError, because Python expects the code inside the function to be indented.
+
+Correct indentation (✅)
+def hello():
+    print("Hello World")   # indented with 4 spaces
+
+Why indentation is important?
+
+Indentation tells Python which lines belong together.
+
+For example:
+
+if True:
+    print("Inside if")
+    print("Still inside if")
+print("Outside if")
+
+
+Output:
+
+Inside if
+Still inside if
+Outside if
+
+
+Notice:
+
+The first two prints are indented → they belong to the if block.
+
+The last print is not indented → it is outside the if.
+
+Rules of indentation
+
+You must be consistent (either use 4 spaces or a tab, but don’t mix).
+
+Indentation errors are common when code is copied from somewhere.
+
+Standard practice = 4 spaces per indentation level.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
