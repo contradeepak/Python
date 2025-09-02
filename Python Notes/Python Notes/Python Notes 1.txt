@@ -1,0 +1,85 @@
+1- Print
+
+You can use single quotes or double quotes.
+print('Deepak')
+print("I love my India")
+
+2- Getting info from the use via Function
+
+name = input('Please enter your name')
+print(name)
+
+
+
+3- # Printing blank lines can improve readability
+
+print('Hello World')
+print()
+print('Did you see that blank line?')
+print('Blank line /n in the middle of string')
+
+
+4- # Debugging with print
+
+print('Adding numbers')
+x = 42 + 206
+print('Performing division')
+y = x / 0
+print('Math Complete')
+
+Output = 
+ y = x / 0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'x' is not defined
+
+5- Comments in Python
+# 
+
+6-
+Strings
+Whats make Python unique is that you do not need any form of a keyword or any other thing to declare a variable.
+You can use single quotes or double quotes.
+
+
+You can combine strings with +
+
+
+7- You can use functions to modify strings
+
+#You can use functions to modify strings
+
+sentence = 'The dog is named Sammy'
+print(sentence.upper())
+print(sentence.lower())
+print(sentence.capitalize())
+print(sentence.count('a'))
+
+8- # The functions help us format strings we save to fles and databases, or display to users
+
+first_name = input('Please enter your first name: ')
+second_name = input('Please enter your second name: ')
+print('Hello, ' + first_name.capitalize() + ' ' + second_name.capitalize())
+
+9- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
