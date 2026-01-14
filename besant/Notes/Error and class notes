@@ -1,0 +1,251 @@
+# Types of Error in python :
+
+# In any programming language there are 2 types of errors
+
+# 1. Syntax Errors
+# 2. Runtime Errors /Exception
+
+
+# Syntax Errors:
+# -----------------
+# -->The errors which occurs because of invalid syntax are called
+#   syntax errors.
+# -->In python Pythoncompiler is responsible for syntax error
+
+# Examples:
+# print('Hello world')
+# name = "mahesh"
+# if name == "mahesh":
+#     print("Helloworld")
+
+# print("start")
+
+
+
+# 2.Runtime Errors /Exception
+
+# -->While executing the program if something goes wrong because of end
+# user input or programming logic or memory problems .... 
+# then we will lead to Runtime Errors.
+# -->Unwanted/Unexpected event that occurs during Executiontime/Runtime
+# which leads to abnormal termination is referred as RuntimeError/Exception
+# -->Some of the Exceptions are ZeroDivisionError, TypeError, ValueError,
+# FileNotFoundError, EOFError
+
+
+# Termination of the program:
+# ---------------------------
+# 1.Abnormal Termination/Non-Graceful Termination
+# 2.Normal Termination/Graceful termination
+
+
+# 1.Abnormal Termination/Non-Graceful Termination :
+
+# example:
+
+# num1 = int(input("Please enter the numerator: "))
+# num2 = int(input("Please enter the denominator: "))
+# print('result = ',num1/num2)
+
+# ZeroDivisionError
+# ----------------------
+
+# --> In the above example programmer has not handled the exception
+# so PVM handled the exception
+
+# --> Then the Exception Object after getting the reason it will
+# abnormally terminates from the program by printing the Exception information on the console
+
+
+# 2.Normal Termination/Graceful termination:
+
+# Syntax to Handle exception in python:
+# ------------------------------------
+# try:
+# ---- (Risky Code)
+# ----
+# except:
+# ---- (Handling the exception code)
+# ----
+
+
+# Exception handling using single except block:
+# ---------------------------------------------
+
+# Example
+
+# try:
+#     num1 = int(input("Please enter the numerator: "))
+#     num2 = int(input("Please enter the denominator: "))
+#     print('result = ',num1/num2)
+# except (ZeroDivisionError, ValueError, NameError):
+#     print("inside ZeroDivisionError")
+
+# NOTE:
+# -----
+# --> In the above example a single except block is used so apart
+# from the given exception if
+# any other exception is occured then PVM has to handle the exception
+# --> So inorder to overcome this disadvantage we have to make use of
+# multiple except block
+
+
+# Exception handling using Multiple except block:
+# ---------------------------------------------
+
+# example
+
+# print("start")
+
+# try:
+#     num1 = int(input("Please enter the numerator: "))
+#     num2 = int(input("Please enter the denominator: "))
+#     print('result = ',num1/num2)
+# except ZeroDivisionError:
+#     print("inside ZeroDivisionError")
+# except ValueError:
+#     print("Inside Value Error")
+# print("end" )
+
+# NOTE:
+# -----
+# -->If there are multiple except blocks in the program then PVM will
+# search for the Exception name from top to bottom untill the matched Exception is avilable
+
+
+# Handling multiple Exceptions using Single except block:/Grouping Multiple
+# Exceptions using single except block
+
+
+# print('Entering the main () code')
+# print('Connection is established')
+# try:
+#   num1=int(input('Enter the Numerator:\t'))
+#   num2=int(input('Enter the Denominator:\t'))
+#   result=num1/num2
+#   print(result)
+# except (ZeroDivisionError,ValueError,NameError) as e:
+#   print('The cause of the exception : ',e)
+#   print('Connection is terminated')
+
+
+# Python's Exception Hierarchy:
+
+# Base Exception
+
+# --> SystemExit
+# --> genaratorExit
+# -->KeyboardInterrupt
+# --> Exception
+#   -->AttributeError
+#   -->ArithematicError---->ZeroDivisionError
+#   -->EOFError         |-->FloatingPointError
+#   -->NameError        |-->OverflowError
+#   -->LockupError---->IndexError , KeyError  
+#   -->OSError-------->FilenotFoundError
+#   -->TypeError   |-->InterruptedError
+#   -->ValueError  |-->PermissionError
+#                  |-->TimeoutError
+
+# NOTE:
+# -----
+# --> Every Exception in Python is a class.
+# --> All exception classes are child classes of BaseException.i.e
+#   every exception class extends BaseException either directly or
+#   indirectly.Hence BaseException acts as root for Python Exception Hierarchy.
+
+# try:
+#     num1 = int(input("Please enter the numerator: "))
+#     num2 = int(input("Please enter the denominator: "))
+#     print('result = ',num1/num2)
+# except Exception as e:
+#     print(f"Error caused by: {e}")
+
+
+# try: 
+#     "risky code"
+# except:
+#     "handing the exception"
+# else:
+#     "no exception".
+# finally:
+#     "always excecute"
+
+
+
+print('Entering the main () code')
+print('Connection is established')
+try:
+  num1=int(input('Enter the Numerator:\t'))
+  num2=int(input('Enter the Denominator:\t'))
+  result=num1/num2
+  print(result)
+except Exception as e:
+    print('The cause of the exception : ',e)
+else:
+    print("im inside the else block")
+finally:
+    print('Connection is terminated')
+
+print('Exiting from the main () code')
+
+
+
+# stack or queue
+
+class Queue:
+
+    def __init__(self):
+        self.stack = []
+   
+    def add_book(self,num):
+        self.stack.append(num)
+
+    def remove_book(self):
+        print(f"remove the book: {self.stack[0]}")
+        self.stack.remove(self.stack[0])
+          
+    def get_queue(self):
+        print(f"All the books: {self.stack}")
+ 
+fiction_books = Queue()
+fiction_books.add_book("Harry potter")
+fiction_books.add_book("snow white")
+fiction_books.add_book("Narnia")
+fiction_books.add_book("Charlie chocolate factory")
+fiction_books.get_queue()
+fiction_books.remove_book()
+fiction_books.get_queue()
+fiction_books.remove_book()
+fiction_books.get_queue()
+
+# stack or queue
+
+class Stack:
+
+    def __init__(self):
+        self.stack = []
+   
+    def add_book(self,num):
+        self.stack.append(num)
+
+    def remove_book(self):
+        book =  self.stack.pop()
+        print(f"remove the book: {book}")
+    
+    def get_stack(self):
+        print(f"All the books: {self.stack}")
+ 
+    
+fiction_books = Stack()
+fiction_books.add_book("Harry potter")
+fiction_books.add_book("snow white")
+fiction_books.add_book("Narnia")
+fiction_books.add_book("Charlie chocolate factory")
+fiction_books.get_stack()
+fiction_books.remove_book()
+fiction_books.get_stack()
+
+
+
+

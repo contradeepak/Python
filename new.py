@@ -1,5 +1,4 @@
-n = int(input("How many terms? "))
-a, b = 0, 1
-for _ in range(n):
-    print(a, end='')
-    a, b = b, a + b
+labels = ['a','b','c']
+my_list = [10,20,30]
+d = {'a':10,'b':20,'c':30}
+my_list
