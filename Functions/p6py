@@ -1,0 +1,7 @@
+dict = {0: 'True'}
+check = any(dict)
+print(check)
+
+# If a dictionary is sent to any function it is the left part i.e. important. So, the value 
+# of check is false. Even if the right value is true etc.
+

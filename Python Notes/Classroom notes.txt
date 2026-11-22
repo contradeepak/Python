@@ -1,0 +1,397 @@
+Data Types
+
+
+1- In Python there are total 14 data types.
+
+Realworld
+Number -> int
+Text -> Strings
+image
+video -> Binary
+audio
+
+
+1- Integer
+2- Float
+3- Byte
+4- Bytearrray
+5- Boolean -> True or False
+6- None
+7- Complex
+8- Range
+
+Advanced data types:
+
+9- List
+10 - Tuple
+11- Set
+12- FrozenSet
+13- String
+14- Dictionary
+
+
+These are the 14 data types in Python.
+
+
+-> List will be created using [] brackets.
+-> Tuple will be created using {} braces.
+
+
+
+Mutable : Changeable
+Immutable : NotChangeable
+
+
+
+List, Set, Dictionary are mutable and all the other are immutable.
+
+
+I can fetch 
+
+
+Operators : Is a symbol that performs operatorions.
+
+Operands-
+
+a = 10
+
+b = 20   assigning values
+
+
++
+_
+/
+// -> Flow division 5
+%  -> 00
+*
+**
+
+
+AND
+
+
+OR
+
+Anyone is true all is true
+
+
+NOT
+
+not of true is false, not of false is true
+
+
+Comparison Operators
+
+a>b
+a<=b
+
+
+Assignment Operators
+
+What is the difference between is and equal to operator.
+
+Is is very important operator.
+
+
+
+
+Control flow statements/ Conditions
+
+a=10
+b=20
+
+if a>10:
+<---->print(a)
+else:
+print(b)
+
+
+
+if we use elif then remaining all the execution skips.
+
+
+
+Loops pe notes banana hai,
+
+
+
+Transfer statements 
+
+
+1- Pass
+2- Continue
+3- Break
+
+
+
+Advanced data types:
+
+1- List
+2- Tuple
+3- Set -> frozenset
+4- dictionary
+5-string
+
+
+List -
+
+1- Ordered collection of data, Homogeneous=Similar types(e.g. array) of data
+Heterogeneous= Combination, different types of data.
+
+
+2- Duplicates are allowed.
+
+3- List is created using [].
+
+4- Mutable data type.(We can perform addition, removal operation, modification operation)
+
+5- List is created using [] and using commas and is stored internally using 
+
+
+Note : If any value in the function is TRUE, then it will print TRUE. 
+If all values are false then it will print false.
+
+
+: String value is always equal to true if it is not empty.
+
+If the string is empty the check value is false.
+
+Any string has the value true.
+
+
+
+✅ What is a palindrome?
+
+A palindrome is a word, number, or phrase that reads the same backward as forward.
+Examples:
+
+"madam" → palindrome
+
+"racecar" → palindrome
+
+"hello" → not palindrome
+
+121 → palindrome
+
+
+
+Great question! In Python, :: appears most often inside slicing.
+
+Let’s break it down step by step:
+
+Normal slicing
+my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(my_list[2:7])   # [2, 3, 4, 5, 6]
+
+
+Here the general syntax is:
+
+sequence[start : stop : step]
+
+What :: means
+
+: → means “everything” if you leave start/stop empty.
+
+:: → means “everything, with a step”.
+
+Example:
+
+print(my_list[::2])   # take every 2nd element → [0, 2, 4, 6, 8]
+print(my_list[::3])   # take every 3rd element → [0, 3, 6, 9]
+
+Common uses of ::
+
+Reverse a list/string
+
+print(my_list[::-1])   # [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+
+Skip elements
+
+print(my_list[::2])    # every second element
+print(my_list[1::2])   # every second element, starting at index 1
+
+
+Copy the whole sequence
+
+copy_list = my_list[:]     # same as my_list[::]
+
+
+✅ In short:
+
+: → slice
+
+:: → slice with step
+
+So :: is just shorthand to apply a step (stride) when slicing.
+
+
+
+Dictioanary : A dictionary is created using 
+
+Dictionary is mutable. It is unordered collection of data. 
+
+No index. Using key you fetch the value. 
+
+
+Strings, Strings in Python:
+
+Anything which is in Double quotes or triple quotes are single quotes. Everything that is in quotation is called strings is in history.
+Strings are immutable.
+
+It is a sequence of characters.
+
+In strings you can use \ escape character to represent special characters inside a string that can’t be typed directly.
+
+
+In one Python file there is only one Doc string. 
+
+
+Functions are reusable block of code that can perform any operation.
+
+
+How to create a function def calc(a,b)
+
+
+
+Types
+
+1. User Defined function
+
+input but no output
+ but no output
+
+2. Builtin function 
+3. Lambda Expressions
+4. Recursive fucntions
+
+
+Lamda Functions 
+
+It is a nameless function. 
+
+
+
+Parameters or Arguments?
+The terms parameter and argument can be used for the same thing: information that are passed into a function.
+
+From a function's perspective:
+
+A parameter is the variable listed inside the parentheses in the function definition.
+
+An argument is the value that is sent to the function when it is called.
+
+
+Arbitrary Arguments are often shortened to *args in Python documentations.
+
+
+
+---------------------------------------------------------------------------------
+
+
+Great question 👍
+
+In Python, indentation means the spaces (or tabs) you put at the beginning of a line to tell Python which block of code it belongs to.
+
+Unlike many other languages (like C, C++, Java) that use { } to mark blocks, Python uses indentation.
+
+Example without indentation (invalid in Python ❌)
+def hello():
+print("Hello World")
+
+
+This will give an IndentationError, because Python expects the code inside the function to be indented.
+
+Correct indentation (✅)
+def hello():
+    print("Hello World")   # indented with 4 spaces
+
+Why indentation is important?
+
+Indentation tells Python which lines belong together.
+
+For example:
+
+if True:
+    print("Inside if")
+    print("Still inside if")
+print("Outside if")
+
+
+Output:
+
+Inside if
+Still inside if
+Outside if
+
+
+Notice:
+
+The first two prints are indented → they belong to the if block.
+
+The last print is not indented → it is outside the if.
+
+Rules of indentation
+
+You must be consistent (either use 4 spaces or a tab, but don’t mix).
+
+Indentation errors are common when code is copied from somewhere.
+
+Standard practice = 4 spaces per indentation level.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
