@@ -196,14 +196,219 @@
 
 # Division divide by 2 program in pYTHON
 
-num = int(input("Enter a number: "))
-if (num%2 == 0):
-    print("Number is even.")
-else:
-    print("Number is odd.")
+# num = int(input("Enter a number: "))
+# if (num%2 == 0):
+#     print("Number is even.")
+# else:
+#     print("Number is odd.")
 
 
 
+# Take marks as input and print a grade using if-elif-else
 
+# num = int(input("Enter a number: "))
+
+# if num > 80:
+#     print("Mark grade A++")
+# elif num > 70:
+#     print("Mark grade A")
+# elif num > 50:
+#     print("Mark grade B++")
+# else:
+#     print("Mark grade C")
+
+# Check whether a number is positive negative or zero
+
+# num = int(input("Enter a number: "))
+# if (num==0):
+#     print("Number is zero")
+# elif (num>0):
+#     print("Print number is positive")
+# elif  (num<0):
+  
+#     print("Number is negative")    
+
+
+# Check whether a number is positive negative or zero
+
+# num = int(input("Enter a number: "))
+# if(num == 0):
+#     print("Number is zero")
+# elif(num>0):
+#     print("Number is positive")
+# elif(num<0):
+#     print("Number is negative")    
+
+
+
+#   conversion from Integer to Float
+
+# x = 10
+# x = float(x)
+# print(x)
+
+# Conversion from Integetr to float
+
+# x = 10
+# x = float(x)
+# print(x)
+
+# Conversion from Integer to String
+
+# age  = 24
+# age = str(age)
+# print(type(age))
+
+# input() and type casting
+
+# input() always returns user input as a String 
+
+
+# Note: The input fucntion always returns user input as a SyntaxWarning
+
+
+# age = 24
+# age = str(age)
+# print(type(age))
+
+
+# Use AND OR to validate two conditions.
+
+# num = int(input("Enter a number"))
+
+# if num &                         
+
+# username = "admin"
+# password = "secret123"
+# is_blocked = False
+
+# if username == "admin" and password == "secret123":
+#     print("LOgin successfull")
+
+# if username == "" or is_blocked:
+#     print("Access_denied")
+
+# username = input("Enter username: ")
+# password = input("Enter password: ")
+
+# if username == "rahul" and password == "pass123":
+#     print("Login successfull")
+# else:
+#     print("Invalid username or password.")
+
+# Login Validation And
+
+# username = input("Enter username: ")
+# password = input("Enter password: ")
+
+# if username == "deepak" and password == "1234":
+#     print("Login successfull")
+# else:
+#     print("Invalid username and password")
+
+# Weekend/Holiday Dioscount
+
+
+# Gives a discount if either it is a weekend or the user has a promo code.
+
+# day = "Sunday"
+# has_promo = False
+
+# if day == "Saturday" or day == "Sunday"  or has_promo:
+#     print("You get a 20% discount")
+# else:
+#     print("Regular price appliers")
+
+# Exam paSS CHECK
+
+# marks = int(input("Enter marks"))
+# attendance = int(input("Enter attendance"))
+
+# if marks >=40 and attendance >= 75:
+#     print("Result: passed")
+# else:
+#     print("Result: failed")
+    
+
+# Exam Pass CHECK
+
+# marks = int(input("Enter marks"))
+# attendance = int(input("Enter attendance"))
+# if marks >=40 and attendance >=75:
+#     print("Result: passed")
+# else:
+#     print("Result: failed")
+
+
+# Check whether the number is divided by 2 or not
+
+# num = int(input("Enter the number"))
+# if num%2 == 0:
+#     print("The student is passed")
+# else: 
+#     print("The number is an odd number")
+
+# Write a nested if program that checks age and ID
+
+# age = int(input("Enter the age"))
+# ID = int(input("Enter the ID"))
+# if age>=18:
+#     print("The person is eligible to enter the exam")
+#     if ID>=5:
+#      print("The person is qualified") 
+#     else:
+#      ("Print invalid ID the person is not qualified")   
+# else: 
+#   print("Underage, not eligible to enter the exam")     
+
+# 8. Create a student dictionary with name, age, and marks and print its values.
+
+# name = int(input("Enter the students name: "))
+# age = int(input("Enter the students age: "))
+# marks = int(input("Enter the students marks: "))
+# print(name)
+
+
+# student = {
+#     "name":"Deepak",
+#     "age":"67",
+#     "marks": "98"
+# }
+# print(student)
+
+
+# student = {
+#     "name":"Rohan Kumar",
+#     "age":"45",
+#     "marks":"99",
+#     "major":"Diploma Polytechnic",
+#     "year":"2025onwards",
+#     "Subjects":"DBMS, OOPS, COMPUTER NETWORKS, COMPUTER ARCHITECTURE DESIGN, DIGITAL LOGIC DESIGN"
+# }
+
+# print(student)
+
+# commando = {
+#     "Name": "Super Commando Dhruv",
+#     "age": "50",
+#     "marks": "99",
+#     "major": "Computer Science and Engineering",
+#     "Subjects": "Oops, DBMS, Multimedia Technologies",
+#     }
+
+# print(commando)
+
+# String to integer
+
+# age = "21"
+# age = int(age)
+# print(age)
+# print(type(age))
+
+# P1. 
+
+x = "10"
+y = int(x)
+print(y+5)
 
 
